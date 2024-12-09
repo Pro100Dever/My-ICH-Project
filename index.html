@@ -73,51 +73,65 @@
       <section class="events">
         <div class="events-near">
           <div class="events-near__nav">
-            <div class="event-near__right">
-              <input type="text" value="Mountain View, CA" />
-              <img src="./assets/icon/pensil.svg" alt="pensil" />
-            </div>
-            <a href="./events.html">See all events</a>
+            <h3 class="events-near__title">Events near</h3>
+            <input
+              class="events-near__input"
+              type="text"
+              value="Mountain View, CA"
+            />
+            <img src="./assets/icon/pensil.svg" alt="pensil" />
           </div>
           <div class="events-near__content">
-            <ul class="events__list">
+            <ul class="events__near-list">
               <li class="events__list-item">
                 <div class="events__img">
-                  <div class="events_online">Online Event</div>
+                  <div class="events__online">Online Event</div>
                 </div>
                 <div class="events__text">
-                  <h3>Day Trading Idea and Strategy</h3>
-                  <div>Business (5 km)</div>
-                  <p>Mon, Mar 18 · 7:00 PM PDT</p>
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status events__status--mobile">
+                    <div>1 going</div>
+                  </div>
                 </div>
-                <div class="event__status">
-                  <dib>1 going</dib>
+                <div class="events__status events__status--desktop">
+                  <div>1 going</div>
                   <div>Free</div>
                 </div>
               </li>
             </ul>
+            <a class="events__link" href="./events.html">See all events</a>
           </div>
         </div>
         <div class="uncoming-online">
-          <div class="events-near__nav">
-            <a href="./events.html">See all events</a>
+          <div class="events-uncoming__nav">
+            <h3 class="events-near__title">Upcoming online events</h3>
           </div>
-          <ul class="events__list">
-            <li class="events__list-item">
-              <div class="events__img">
-                <div class="events_online">Online Event</div>
-              </div>
-              <div class="events__text">
-                <h3>Day Trading Idea and Strategy</h3>
-                <div>Business (5 km)</div>
-                <p>Mon, Mar 18 · 7:00 PM PDT</p>
-              </div>
-              <div class="event__status">
-                <dib>1 going</dib>
-                <div>Free</div>
-              </div>
-            </li>
-          </ul>
+          <div class="events-uncoming__content">
+            <ul class="events__uncoming-list">
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+            </ul>
+            <a class="events__link" href="./events.html">See all events</a>
+          </div>
         </div>
       </section>
       <section class="invite"></section>

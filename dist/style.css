@@ -253,5 +253,141 @@ a {
     margin: 0;
   }
 }
+.events {
+  margin: 20px 15px 0;
+}
+.events-near {
+  margin-bottom: 65px;
+}
+.events-near__nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.events-near__nav img {
+  margin-left: -30px;
+}
+.events-near__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.67px;
+}
+.events-near__input {
+  width: 164px;
+  color: #00798a;
+  font-size: 13.71px;
+  font-weight: 600;
+  line-height: 16.45px;
+  padding: 8px 28px 8px 8px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(151, 202, 209, 0.1215686275);
+}
+.events__near-list, .events__uncoming-list {
+  margin-bottom: 20px;
+}
+.events-uncoming__nav {
+  margin-bottom: 17px;
+}
+.events__list-item {
+  display: flex;
+  gap: 7.5px;
+  padding-top: 10px;
+  border-top: 0.61px solid #d9d9d9;
+}
+.events__date--desktop, .events__status--desktop {
+  display: none;
+}
+.events__date--mobile {
+  color: #7c6f50;
+  font-size: 8.58px;
+  font-weight: 500;
+  line-height: 12.26px;
+}
+.events__text {
+  padding: 2px 0 0;
+}
+.events__title {
+  font-size: 9.64px;
+  font-weight: 500;
+  line-height: 14.46px;
+}
+.events__location {
+  color: #707070;
+  font-family: Roboto;
+  font-size: 8.44px;
+  font-weight: 400;
+  line-height: 12.05px;
+  margin-bottom: 30px;
+}
+.events__img {
+  position: relative;
+  width: 98px;
+  height: 55px;
+  background: url(../assets/image/event1.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.events__online {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  font-size: 7.3px;
+  font-weight: 500;
+  line-height: 9.73px;
+  color: #707070;
+}
+.events__online::after {
+  position: absolute;
+  content: url(../assets/icon/camera.svg);
+  left: -10px;
+  bottom: -1px;
+}
+.events__link {
+  color: #00798a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 9.73px;
+}
+.events__status--mobile {
+  font-size: 8.44px;
+  line-height: 12.05px;
+  color: #707070;
+}
+@media screen and (min-width: 431px) {
+  .events .events__img {
+    min-width: 196px;
+    height: 110px;
+  }
+  .events .events__status--mobile, .events .events__location, .events .events__date--mobile {
+    font-size: 12px;
+  }
+  .events .events__title {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .events .events__online {
+    font-size: 10px;
+    right: -75px;
+    bottom: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .events {
+    max-width: 580px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .events {
+    max-width: 890px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .events {
+    max-width: 1200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
