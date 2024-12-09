@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.header {
+  height: fit-content;
+  padding: 4px 15px;
+}
+.header__content--desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__right-block {
+  width: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  .header__right-block {
+    display: flex;
+  }
+}
+.header__left-block, .header__login {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.header .login__btn {
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.09px;
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  .header .login__btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+.header .login__btn:first-child {
+  background: transparent;
+  padding: 0;
+}
+.header .login__btn:last-child {
+  border-radius: 7px;
+  background: #00798a;
+  color: white;
+}
+
+.search-form {
+  position: relative;
+  height: 42px;
+}
+.search-form__button {
+  position: relative;
+  height: 42px;
+  min-width: 42px;
+  background: #f65858;
+  border: none;
+  border-radius: 0 7px 7px 0;
+}
+.search-form__button::after {
+  position: absolute;
+  content: url(../assets/icon/lupe-white.svg);
+  top: 13px;
+  left: 13px;
+}
+.search-form__input {
+  border: 1px solid #d9d9d9;
+}
+.search-form__input:first-child {
+  padding: 13px 37px;
+  border-radius: 7px 0 0 7px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+}
+.search-form--mobile {
+  margin: 15px 0;
+  display: flex;
+}
+.search-form--mobile .search-form__input {
+  height: 42px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .search-form--mobile {
+    display: none;
+  }
+}
+.search-form--desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .search-form--desktop {
+    display: flex;
+  }
+}
+.search-form::before {
+  position: absolute;
+  content: url(../assets/icon/lupe.svg);
+  top: 13px;
+  left: 13px;
+}
+
+#language {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.09px;
+}
+#language::after {
+  position: absolute;
+  content: url(../assets/icon/planet.svg);
+  left: -20px;
+}
+@media screen and (min-width: 1024px) {
+  #language {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: fit-content;
+    padding: 15px 50px 15px 15px;
+  }
+  .header__logo {
+    margin-right: 40px;
+  }
+  .search-form__input:nth-child(2) {
+    margin-left: -1px;
+    padding: 13px 17px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
