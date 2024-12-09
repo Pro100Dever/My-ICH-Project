@@ -1,8 +1,9 @@
-const baseUrl = 'https://'
+const baseUrl =
+  'https://my-json-server.typicode.com/Pro100Dever/projectDatas/db'
 
 export const detchEvent = async () => {
   try {
-    const response = await fetch(`${baseUrl}?_limit=4`)
+    const response = await fetch(baseUrl)
     if (!response.ok) {
       throw new Error("Internal Server Error. Can't delete event")
     }
