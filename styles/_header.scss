@@ -2,7 +2,7 @@
 
 .header {
   height: fit-content;
-  padding: 4px 15px;
+  padding: 4px 15px 0;
 
   &__content--desktop {
     display: flex;
@@ -83,7 +83,7 @@
   }
 
   &--mobile {
-    margin: 15px 0;
+    margin: 15px 0 0;
     display: flex;
 
     .search-form {

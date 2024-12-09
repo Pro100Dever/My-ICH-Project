@@ -1,0 +1,109 @@
+@use '../breakpoints' as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 0;
+  gap: 10px;
+
+  &__button {
+    display: none;
+    margin-top: 24px;
+    padding: 8px 16px;
+    background: #00798a;
+    border-radius: 8px;
+    border: none;
+    & a {
+      color: white;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 30.5px;
+    margin: 30px 0 20px;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  &__left-conteiner {
+    max-width: 600px;
+  }
+  &__right-conteiner {
+    text-align: center;
+    margin: 0 89px;
+    max-width: 379px;
+    max-height: 269px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+@include for-medium-up {
+  .about {
+    justify-content: center;
+    flex-direction: row;
+    max-width: 580px;
+    margin: 30px auto 70px;
+    padding: 0;
+
+    &__left-conteiner {
+      max-width: 330px;
+    }
+
+    &__right-conteiner {
+      margin: 0;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 46px;
+    }
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &__button {
+      display: block;
+    }
+  }
+}
+@include for-large-up {
+  .about {
+    align-items: start;
+    max-width: 890px;
+    margin: 70px auto 122px;
+    &__right-conteiner {
+      margin: 0 45px;
+    }
+    &__title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 52px;
+    }
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+@include for-xl-up {
+  .about {
+    max-width: 1200px;
+    margin: 70px auto 122px;
+    &__left-conteiner {
+      max-width: 600px;
+    }
+
+    &__right-conteiner {
+      margin: 0;
+    }
+  }
+}

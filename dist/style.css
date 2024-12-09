@@ -8,9 +8,19 @@ body {
   font-family: Roboto;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   height: fit-content;
-  padding: 4px 15px;
+  padding: 4px 15px 0;
 }
 .header__content--desktop {
   display: flex;
@@ -82,7 +92,7 @@ body {
   line-height: 18.75px;
 }
 .search-form--mobile {
-  margin: 15px 0;
+  margin: 15px 0 0;
   display: flex;
 }
 .search-form--mobile .search-form__input {
@@ -139,6 +149,108 @@ body {
   .search-form__input:nth-child(2) {
     margin-left: -1px;
     padding: 13px 17px;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 0;
+  gap: 10px;
+}
+.about__button {
+  display: none;
+  margin-top: 24px;
+  padding: 8px 16px;
+  background: #00798a;
+  border-radius: 8px;
+  border: none;
+}
+.about__button a {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about__title {
+  font-size: 25px;
+  line-height: 30.5px;
+  margin: 30px 0 20px;
+}
+.about__text {
+  font-size: 12px;
+  line-height: 24px;
+}
+.about__left-conteiner {
+  max-width: 600px;
+}
+.about__right-conteiner {
+  text-align: center;
+  margin: 0 89px;
+  max-width: 379px;
+  max-height: 269px;
+}
+.about__right-conteiner img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    justify-content: center;
+    flex-direction: row;
+    max-width: 580px;
+    margin: 30px auto 70px;
+    padding: 0;
+  }
+  .about__left-conteiner {
+    max-width: 330px;
+  }
+  .about__right-conteiner {
+    margin: 0;
+  }
+  .about__title {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  .about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .about__button {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    align-items: start;
+    max-width: 890px;
+    margin: 70px auto 122px;
+  }
+  .about__right-conteiner {
+    margin: 0 45px;
+  }
+  .about__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+  .about__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    max-width: 1200px;
+    margin: 70px auto 122px;
+  }
+  .about__left-conteiner {
+    max-width: 600px;
+  }
+  .about__right-conteiner {
+    margin: 0;
   }
 }
 
