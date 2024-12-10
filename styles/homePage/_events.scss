@@ -224,7 +224,7 @@
         position: relative;
         &::before {
           position: absolute;
-          content: url(/assets/icon/ok.svg);
+          content: url(../assets/icon/ok.svg);
           left: -27px;
         }
       }
@@ -232,7 +232,7 @@
         position: relative;
         &::before {
           position: absolute;
-          content: url(/assets/icon/ticket.svg);
+          content: url(../assets/icon/ticket.svg);
           left: -27px;
           bottom: -5px;
         }
@@ -252,7 +252,7 @@
       margin-bottom: 12px;
       &::after {
         position: absolute;
-        content: url(/assets/icon/calendar.svg);
+        content: url(../assets/icon/calendar.svg);
         bottom: -3px;
         left: -2px;
       }

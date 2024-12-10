@@ -461,7 +461,7 @@ a {
   }
   .events__status--desktop div:first-child::before {
     position: absolute;
-    content: url(/assets/icon/ok.svg);
+    content: url(../assets/icon/ok.svg);
     left: -27px;
   }
   .events__status--desktop div:last-child {
@@ -469,7 +469,7 @@ a {
   }
   .events__status--desktop div:last-child::before {
     position: absolute;
-    content: url(/assets/icon/ticket.svg);
+    content: url(../assets/icon/ticket.svg);
     left: -27px;
     bottom: -5px;
   }
@@ -488,7 +488,7 @@ a {
   }
   .events__text::after {
     position: absolute;
-    content: url(/assets/icon/calendar.svg);
+    content: url(../assets/icon/calendar.svg);
     bottom: -3px;
     left: -2px;
   }
