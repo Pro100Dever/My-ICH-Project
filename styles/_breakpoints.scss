@@ -1,7 +1,7 @@
 $sm: 430px;
 $md: 768px;
 $lg: 1024px;
-$xl: 1200px;
+$xl: 1240px;
 
 @mixin for-small-up {
   @media screen and (min-width: ($sm + 1)) {

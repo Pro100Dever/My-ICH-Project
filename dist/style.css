@@ -32,7 +32,7 @@ main {
     max-width: 890px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   main {
     max-width: 1196px;
   }
@@ -260,7 +260,7 @@ footer {
     font-weight: 400;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   .about {
     margin: 70px auto 122px;
   }
@@ -546,7 +546,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   .events__near-list, .events__uncoming-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -625,7 +625,7 @@ footer {
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   .invite {
     padding: 20px 56px;
   }
@@ -677,7 +677,7 @@ footer {
     min-width: 127px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   .categories {
     margin-bottom: 64px;
   }
@@ -770,7 +770,7 @@ footer {
     margin-bottom: 28px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   .popular-cities__list {
     gap: 42px;
   }
