@@ -85,7 +85,7 @@
   }
 
   &__online {
-    display: none;
+    // display: none;
     position: absolute;
     bottom: 0;
     right: -60px;
@@ -132,9 +132,19 @@
       margin: 5px 0;
     }
     &__online {
-      font-size: 10px;
-      right: -75px;
-      bottom: 40%;
+      font-size: 12px;
+      padding: 3px 8px 3px 24px;
+      background: white;
+      border-radius: 4px;
+      top: 5px;
+      left: 10px;
+      width: fit-content;
+      height: fit-content;
+      &::after {
+        content: url(../assets/icon/cameraForDesctop.svg);
+        left: 5px;
+        top: 2px;
+      }
     }
   }
 
@@ -142,24 +152,12 @@
     max-width: 580px;
     margin: auto auto;
     &__online {
-      position: absolute;
-      padding: 2px 8px 2px 24px;
-      color: #707070;
-      font-size: 12px;
-      font-weight: 500;
       line-height: 16px;
-      background: white;
-      top: 5px;
-      left: 10px;
-      width: fit-content;
-      height: fit-content;
-      border-radius: 4px;
+      padding: 2px 8px 2px 24px;
 
       &::after {
-        position: absolute;
-        content: url(../assets/icon/cameraForDesctop.svg);
-        left: 5px;
-        bottom: 0;
+        left: 6px;
+        top: 3.3px;
       }
     }
     .events-near {
@@ -227,7 +225,7 @@
         &::before {
           position: absolute;
           content: url(/assets/icon/ok.svg);
-          left: -25px;
+          left: -27px;
         }
       }
       & div:last-child {
@@ -235,8 +233,8 @@
         &::before {
           position: absolute;
           content: url(/assets/icon/ticket.svg);
-          left: -25px;
-          bottom: -4px;
+          left: -27px;
+          bottom: -5px;
         }
       }
     }
@@ -254,9 +252,9 @@
       margin-bottom: 12px;
       &::after {
         position: absolute;
-        content: url('/assets/icon/calendar.svg');
-        bottom: -1px;
-        left: 0;
+        content: url(/assets/icon/calendar.svg);
+        bottom: -3px;
+        left: -2px;
       }
     }
     &__img {
