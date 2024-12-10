@@ -162,16 +162,29 @@
         bottom: 0;
       }
     }
+    .events-near {
+      &__title {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      &__input {
+        width: 240px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
     &-near {
       & img {
-        margin-left: -38px;
+        margin-left: -45px;
       }
+
       &__nav {
         gap: 15px;
+        margin: 0;
       }
       &__container {
         display: flex;
-        height: 33px;
+        align-items: center;
         margin-bottom: 24px;
         justify-content: space-between;
       }

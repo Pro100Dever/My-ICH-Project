@@ -408,15 +408,25 @@ a {
     left: 5px;
     bottom: 0;
   }
+  .events .events-near__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .events .events-near__input {
+    width: 240px;
+    font-size: 20px;
+    line-height: 24px;
+  }
   .events-near img {
-    margin-left: -38px;
+    margin-left: -45px;
   }
   .events-near__nav {
     gap: 15px;
+    margin: 0;
   }
   .events-near__container {
     display: flex;
-    height: 33px;
+    align-items: center;
     margin-bottom: 24px;
     justify-content: space-between;
   }
