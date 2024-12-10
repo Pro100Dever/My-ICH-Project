@@ -1,8 +1,16 @@
 @use './reset';
 @use './variables';
 @use './mixins';
+@use './globals';
 @use './breakpoints';
 @use './header';
 @use './footer';
+// Home page
 @use './homePage/about.scss';
 @use './homePage/events';
+@use './homePage/invite';
+@use './homePage/categories';
+@use './homePage/popular-cities';
+@use './homePage/meetup';
+@use './homePage/friendship';
+// Events page
