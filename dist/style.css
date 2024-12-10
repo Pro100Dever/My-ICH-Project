@@ -171,6 +171,10 @@ main {
     padding: 13px 17px;
   }
 }
+footer {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
