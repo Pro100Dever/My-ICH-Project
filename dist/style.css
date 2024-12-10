@@ -602,6 +602,14 @@ footer {
   .invite__right-content--mobile {
     display: none;
   }
+  .invite__title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .invite__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .invite {
@@ -610,14 +618,6 @@ footer {
   }
   .invite__right-content {
     display: block;
-  }
-  .invite__title {
-    font-size: 28px;
-    margin-bottom: 16px;
-  }
-  .invite__description {
-    font-size: 16px;
-    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -682,6 +682,95 @@ footer {
   }
   .categories__list-item {
     width: 135px;
+  }
+}
+
+.popular-cities {
+  margin-bottom: 43px;
+}
+.popular-cities__text-container {
+  margin-bottom: 10px;
+}
+.popular-cities__title {
+  color: #212121;
+  font-size: 20px;
+  line-height: 36px;
+}
+.popular-cities__description {
+  color: #707070;
+  font-size: 12px;
+  line-height: 24px;
+}
+.popular-cities__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  text-align: center;
+}
+.popular-cities__list-item--desktop {
+  display: none;
+}
+.popular-cities__list img {
+  width: 154px;
+}
+.popular-cities__list div {
+  margin-bottom: 18px;
+}
+.popular-cities__list span {
+  color: #212121;
+  font-size: 14.94px;
+  font-weight: 600;
+  line-height: 20.92px;
+}
+@media screen and (min-width: 431px) {
+  .popular-cities__list img {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .popular-cities__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .popular-cities__description {
+    font-size: 16px;
+  }
+  .popular-cities__list {
+    row-gap: 30px;
+  }
+  .popular-cities__list img {
+    width: 205px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .popular-cities {
+    margin-bottom: 64px;
+  }
+  .popular-cities__list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .popular-cities__list-item--desktop {
+    display: block;
+  }
+  .popular-cities__list img {
+    width: 154px;
+  }
+  .popular-cities__list div {
+    margin-bottom: 24px;
+  }
+  .popular-cities__title {
+    margin-bottom: 16px;
+  }
+  .popular-cities__text-container {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .popular-cities__list {
+    gap: 42px;
+  }
+  .popular-cities__list img {
+    width: 205px;
   }
 }
 

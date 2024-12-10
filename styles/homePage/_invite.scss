@@ -42,8 +42,6 @@
     max-width: 341px;
     min-height: 136px;
     background: center / contain no-repeat url(../assets/image/hands.png);
-    //cover;
-    // contain
   }
   @include for-medium-up {
     text-align: start;
@@ -56,13 +54,6 @@
     &__right-content--mobile {
       display: none;
     }
-  }
-  @include for-large-up {
-    padding: 15px 56px;
-    gap: 75px;
-    &__right-content {
-      display: block;
-    }
     &__title {
       font-size: 28px;
       margin-bottom: 16px;
@@ -70,6 +61,13 @@
     &__description {
       font-size: 16px;
       margin-bottom: 16px;
+    }
+  }
+  @include for-large-up {
+    padding: 15px 56px;
+    gap: 75px;
+    &__right-content {
+      display: block;
     }
   }
   @include for-xl-up {
