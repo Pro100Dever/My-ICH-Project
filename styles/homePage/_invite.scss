@@ -1,0 +1,78 @@
+@use '../breakpoints' as *;
+
+.invite {
+  width: 100vw;
+  text-align: center;
+  margin-left: -15px;
+  margin-top: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background: #97cad114;
+  border-radius: 8px;
+
+  &__btn {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    background: #e32359;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 67px;
+  }
+
+  &__title {
+    text-align: start;
+    color: #212121;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  &__description {
+    text-align: start;
+    color: #212121;
+    line-height: 24px;
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+  &__right-content {
+    display: none;
+  }
+  &__right-content--mobile {
+    margin: 0 auto 6px auto;
+    max-width: 341px;
+    min-height: 136px;
+    background: center / contain no-repeat url(../assets/image/hands.png);
+    //cover;
+    // contain
+  }
+  @include for-medium-up {
+    text-align: start;
+    width: auto;
+    margin-left: auto;
+    padding: 10px auto;
+    &__right-content {
+      display: block;
+    }
+    &__right-content--mobile {
+      display: none;
+    }
+  }
+  @include for-large-up {
+    padding: 15px 56px;
+    gap: 75px;
+    &__right-content {
+      display: block;
+    }
+    &__title {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    &__description {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  @include for-xl-up {
+    padding: 20px 56px;
+  }
+}
