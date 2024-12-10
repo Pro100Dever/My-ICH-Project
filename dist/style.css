@@ -314,6 +314,10 @@ footer {
   padding-top: 10px;
   border-top: 0.61px solid #d9d9d9;
   margin-bottom: 21px;
+  display: none;
+}
+.events__list-item:nth-child(1), .events__list-item:nth-child(2), .events__list-item:nth-child(3) {
+  display: flex;
 }
 .events__date--desktop, .events__status--desktop {
   display: none;
@@ -499,6 +503,7 @@ footer {
     padding: 0;
     gap: 0;
     border: none;
+    display: flex;
   }
   .events__text {
     position: relative;

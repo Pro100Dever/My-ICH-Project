@@ -42,6 +42,13 @@
     padding-top: 10px;
     border-top: 0.61px solid #d9d9d9;
     margin-bottom: 21px;
+    display: none;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: flex;
+    }
   }
   &__date--desktop,
   &__status--desktop {
@@ -246,6 +253,7 @@
       padding: 0;
       gap: 0;
       border: none;
+      display: flex;
     }
     &__text {
       position: relative;
