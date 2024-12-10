@@ -45,7 +45,6 @@
 }
 @include for-medium-up {
   .about {
-    justify-content: center;
     flex-direction: row;
     max-width: 580px;
     margin: 30px auto 70px;

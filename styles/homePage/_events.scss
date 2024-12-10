@@ -41,6 +41,7 @@
     gap: 7.5px;
     padding-top: 10px;
     border-top: 0.61px solid #d9d9d9;
+    margin-bottom: 21px;
   }
   &__date--desktop,
   &__status--desktop {
@@ -76,6 +77,11 @@
     background: url(../assets/image/event1.webp);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include for-medium-up {
+      width: 272px;
+      height: 153px;
+    }
   }
 
   &__online {
@@ -87,6 +93,7 @@
     font-weight: 500;
     line-height: 9.73px;
     color: #707070;
+
     &::after {
       position: absolute;
       content: url(../assets/icon/camera.svg);
@@ -94,11 +101,14 @@
       bottom: -1px;
     }
   }
-  &__link {
+  &__link--mobile {
     color: #00798a;
     font-size: 12px;
     font-weight: 500;
     line-height: 9.73px;
+  }
+  &__link--desktop {
+    display: none;
   }
 
   &__status--mobile {
@@ -108,36 +118,172 @@
   }
 
   @include for-small-up {
-    .events {
-      &__img {
-        min-width: 196px;
-        height: 110px;
+    &__img {
+      min-width: 196px;
+      height: 110px;
+    }
+    &__status--mobile,
+    &__location,
+    &__date--mobile {
+      font-size: 12px;
+    }
+    &__title {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    &__online {
+      font-size: 10px;
+      right: -75px;
+      bottom: 40%;
+    }
+  }
+
+  @include for-medium-up {
+    max-width: 580px;
+    margin: auto auto;
+    &__online {
+      position: absolute;
+      padding: 2px 8px 2px 24px;
+      color: #707070;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      background: white;
+      top: 5px;
+      left: 10px;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 4px;
+
+      &::after {
+        position: absolute;
+        content: url(../assets/icon/cameraForDesctop.svg);
+        left: 5px;
+        bottom: 0;
       }
-      &__status--mobile,
-      &__location,
-      &__date--mobile {
-        font-size: 12px;
+    }
+    &-near {
+      & img {
+        margin-left: -38px;
       }
-      &__title {
-        font-size: 16px;
-        margin: 5px 0;
+      &__nav {
+        gap: 15px;
       }
-      &__online {
-        font-size: 10px;
-        right: -75px;
-        bottom: 40%;
-        &::after {
+      &__container {
+        display: flex;
+        height: 33px;
+        margin-bottom: 24px;
+        justify-content: space-between;
+      }
+    }
+    &-uncoming__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__link--desktop {
+      display: block;
+      color: #00798a;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    &-near,
+    &__uncoming-online {
+      margin-bottom: 40px;
+    }
+    &__date--mobile,
+    &__status--mobile,
+    &__link--mobile {
+      display: none;
+    }
+    &__date--desktop,
+    &__status--desktop {
+      display: flex;
+      gap: 42px;
+      margin-left: 26px;
+    }
+    &__date--desktop {
+      font-size: 14px;
+      line-height: 20px;
+      color: #212121;
+    }
+    &__status--desktop {
+      & div:first-child {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: url(/assets/icon/ok.svg);
+          left: -25px;
+        }
+      }
+      & div:last-child {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: url(/assets/icon/ticket.svg);
+          left: -25px;
+          bottom: -4px;
         }
       }
     }
-  }
-  @include for-medium-up {
-    max-width: 580px;
+    &__list-item {
+      flex-direction: column;
+      height: 399px;
+      margin: 0;
+      padding: 0;
+      gap: 0;
+      border: none;
+    }
+    &__text {
+      position: relative;
+      margin-bottom: 12px;
+      &::after {
+        position: absolute;
+        content: url('/assets/icon/calendar.svg');
+        bottom: -1px;
+        left: 0;
+      }
+    }
+    &__img {
+      width: 272px;
+      height: 153px;
+      position: relative;
+    }
+    &__title {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    &__location {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+    }
+    &__uncoming-list,
+    &__near-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
   }
   @include for-large-up {
     max-width: 890px;
+    &__near-list,
+    &__uncoming-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
   @include for-xl-up {
     max-width: 1200px;
+    &__near-list,
+    &__uncoming-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
