@@ -336,6 +336,7 @@ a {
   }
 }
 .events__online {
+  display: none;
   position: absolute;
   bottom: 0;
   right: -60px;
