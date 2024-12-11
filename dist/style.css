@@ -645,7 +645,7 @@ footer {
   text-align: center;
   min-width: 135px;
   height: 112px;
-  padding: 22px 28px 16px;
+  padding: 22px 19px 16px;
   background: rgba(151, 202, 209, 0.0784313725);
   border-radius: 8px;
 }
@@ -654,6 +654,11 @@ footer {
   display: block;
   width: 20px;
   height: 20px;
+}
+.categories__list-item span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 @media screen and (min-width: 768px) {
   .categories {

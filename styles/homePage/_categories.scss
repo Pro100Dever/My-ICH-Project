@@ -21,7 +21,7 @@
       text-align: center;
       min-width: 135px;
       height: 112px;
-      padding: 22px 28px 16px;
+      padding: 22px 19px 16px;
       background: $light-green-background;
       border-radius: 8px;
       & img {
@@ -29,6 +29,11 @@
         display: block;
         width: 20px;
         height: 20px;
+      }
+      & span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
       }
     }
   }
