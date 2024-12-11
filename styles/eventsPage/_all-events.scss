@@ -1,0 +1,60 @@
+@use '../variables' as *;
+@use '../breakpoints' as *;
+
+.all-events {
+  margin: 77px 0 100px;
+
+  &__title {
+    color: $black;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  &__description a {
+    display: block;
+    width: fit-content;
+    color: $teal-green;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    border-bottom: 4px solid $teal-green;
+    padding: 0 4px 4px 4px;
+    margin: 16px 0;
+  }
+  &__overflow {
+    display: flex;
+    align-items: center;
+    gap: 19.5px;
+    min-width: 600px;
+  }
+  &__filter {
+    margin-bottom: 18px;
+    overflow: auto;
+    & ul {
+      display: none; // Пончинить
+    }
+    &-type,
+    &-distance,
+    &-category,
+    &-date {
+      padding: 16px;
+      padding-right: 42px;
+      border-radius: 40px;
+      background-color: $gray-background;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: url(../assets/icon/arrow-list.svg);
+        right: 15px;
+        top: 13px;
+      }
+      & div {
+        display: none;
+      }
+    }
+    &-title {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+    }
+  }
+}

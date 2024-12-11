@@ -99,7 +99,9 @@
     font-weight: 500;
     line-height: 9.73px;
     color: $grey-black;
-
+    &--online {
+      display: block;
+    }
     &::after {
       position: absolute;
       content: url(../assets/icon/camera.svg);
