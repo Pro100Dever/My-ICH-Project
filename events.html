@@ -60,57 +60,114 @@
               <a href="./events.html">Events</a>
             </div>
             <!-- Filter -->
-            <div class="all-events__filter">
-              <div class="all-events__overflow">
-                <div class="all-events__filter-type">
-                  <h4 class="all-events__filter-title">Any Type</h4>
-                  <div id="Online">Online</div>
-                  <div id="Offline">Offline</div>
-                </div>
-                <div class="all-events__filter-distance">
-                  <h4 class="all-events__filter-title">Any Type</h4>
-                  <div id="Online">Online</div>
-                  <div id="Offline">Offline</div>
-                </div>
-                <div class="all-events__filter-category">
-                  <h4 class="all-events__filter-title">Any Type</h4>
-                  <div id="Online">Online</div>
-                  <div id="Offline">Offline</div>
-                </div>
-                <div class="all-events__filter-date">
-                  <h4 class="all-events__filter-title">Any Type</h4>
-                  <div id="Online">Online</div>
-                  <div id="Offline">Offline</div>
-                </div>
-                <div class="reset_filter">
-                  <img
-                    src="./assets/icon/reset_settings.svg"
-                    alt="reset_filter"
-                  />
+            <ul class="all-events__filter">
+              <li class="all-events__filter-type" onclick="toggleElement(this)">
+                <span>Any type</span>
+                <ul>
+                  <li>Any type</li>
+                  <li>Online</li>
+                  <li>Offline</li>
+                </ul>
+              </li>
+              <li
+                class="all-events__filter-distance"
+                onclick="toggleElement(this)"
+              >
+                <span>Any distance</span>
+                <ul>
+                  <li>Any distance</li>
+                  <li>5 km</li>
+                  <li>10 km</li>
+                  <li>15 km</li>
+                  <li>25 km</li>
+                  <li>50 km</li>
+                  <li>75 km</li>
+                  <li class="nav-menu__item-plus">100 km</li>
+                </ul>
+              </li>
+              <li
+                class="all-events__filter-category"
+                onclick="toggleElement(this)"
+              >
+                <span>Any category</span>
+                <ul>
+                  <li>Any category</li>
+                  <li>Social Activities</li>
+                  <li>Hobbies and Passions</li>
+                  <li>Health and Wellbeing</li>
+                  <li>Health and Wellbeing</li>
+                  <li>Business</li>
+                  <li>Technology</li>
+                </ul>
+              </li>
+              <li class="all-events__filter-date" onclick="toggleElement(this)">
+                <span>Any data</span>
+                <ul>
+                  <li>Any data</li>
+                  <li>Mar 13, 11:00 AM</li>
+                  <li>Mar 14, 11:00 AM</li>
+                  <li>Mar 14, 8:00 PM</li>
+                  <li>Mar 16, 2:00 PM</li>
+                  <li>Mar 23, 11:30 AM</li>
+                  <li>Mar 30, 2:00 PM</li>
+                </ul>
+              </li>
+              <li class="reset_filter">
+                <img
+                  src="./assets/icon/reset_settings.svg"
+                  alt="reset_filter"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- Content -->
+          <ul class="all-events__list">
+            <li class="all-events__list-item">
+              <div class="all-events__img">
+                <div class="all-events__online">Online Event</div>
+              </div>
+              <div class="all-events__text">
+                <p class="all-events__date">Mon, Mar 18 · 7:00 PM PDT</p>
+                <h3 class="all-events__list-title">
+                  Day Trading Idea and Strategy
+                </h3>
+                <div class="all-events__location">Business (5 km)</div>
+                <div class="all-events__status">
+                  <div>1 going</div>
                 </div>
               </div>
-            </div>
-            <!-- Content -->
-            <div class="all-events__content">
-              <ul class="all-events__near-list">
-                <li class="all-events__list-item">
-                  <div class="all-events__img">
-                    <div class="all-events__online">Online Event</div>
-                  </div>
-                  <div class="all-events__text">
-                    <p class="all-events__date">Mon, Mar 18 · 7:00 PM PDT</p>
-                    <h3 class="all-events__list-title">
-                      Day Trading Idea and Strategy
-                    </h3>
-                    <div class="all-events__location">Business (5 km)</div>
-                    <div class="all-events__status">
-                      <div>1 going</div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="all-events__list-item">
+              <div class="all-events__img">
+                <div class="all-events__online">Online Event</div>
+              </div>
+              <div class="all-events__text">
+                <p class="all-events__date">Mon, Mar 18 · 7:00 PM PDT</p>
+                <h3 class="all-events__list-title">
+                  Day Trading Idea and Strategy
+                </h3>
+                <div class="all-events__location">Business (5 km)</div>
+                <div class="all-events__status">
+                  <div>1 going</div>
+                </div>
+              </div>
+            </li>
+            <li class="all-events__list-item">
+              <div class="all-events__img">
+                <div class="all-events__online">Online Event</div>
+              </div>
+              <div class="all-events__text">
+                <p class="all-events__date">Mon, Mar 18 · 7:00 PM PDT</p>
+                <h3 class="all-events__list-title">
+                  Day Trading Idea and Strategy
+                </h3>
+                <div class="all-events__location">Business (5 km)</div>
+                <div class="all-events__status">
+                  <div>1 going</div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
