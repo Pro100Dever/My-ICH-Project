@@ -592,6 +592,7 @@ footer {
     text-align: start;
     width: auto;
     margin-left: auto;
+    margin-top: 40px;
     padding: 10px auto;
   }
   .invite__right-content {
@@ -728,6 +729,9 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
+  .popular-cities {
+    margin-bottom: 64px;
+  }
   .popular-cities__title {
     font-size: 28px;
     margin-bottom: 10px;
@@ -775,6 +779,200 @@ footer {
   }
   .popular-cities__list img {
     width: 205px;
+  }
+}
+
+.meetup {
+  margin-bottom: 17px;
+}
+.meetup__title {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+.meetup-container__title {
+  font-size: 12px;
+  line-height: 14.93px;
+  margin-bottom: 10px;
+}
+.meetup-container__description {
+  font-size: 10px;
+  line-height: 14.93px;
+  margin-bottom: 10px;
+}
+.meetup__container {
+  display: flex;
+  align-items: start;
+  padding: 20px 0 15px 15px;
+  gap: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background-color: rgba(151, 202, 209, 0.0784313725);
+}
+.meetup__container-text {
+  width: 236px;
+}
+.meetup__container-text a {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14.93px;
+  color: #00798a;
+}
+.meetup__container-img {
+  margin-top: -8px;
+  transform: scale(0.6);
+}
+@media screen and (min-width: 431px) {
+  .meetup__container {
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .meetup__container-text {
+    width: auto;
+  }
+  .meetup__container-text a {
+    font-size: 12px;
+  }
+  .meetup__container-img {
+    transform: scale(1);
+    margin-top: 0;
+  }
+  .meetup-container__title {
+    font-size: 16px;
+  }
+  .meetup-container__description {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .meetup {
+    margin-bottom: 64px;
+  }
+  .meetup__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .meetup__container {
+    padding: 32px 24px 24px 24px;
+  }
+  .meetup__container-text {
+    width: auto;
+  }
+  .meetup__container-text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .meetup-container__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .meetup-container__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .meetup {
+    margin-bottom: 64px;
+  }
+  .meetup__container {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .meetup__container-text {
+    max-width: 380px;
+  }
+  .meetup__flex {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.friendship__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 36px;
+}
+.friendship__description {
+  display: none;
+  color: #707070;
+}
+.friendship__list-item {
+  padding-top: 15px;
+  border-top: 1px solid #d9d9d9;
+  margin-bottom: 32px;
+}
+.friendship__list-item img {
+  width: 100%;
+  margin-bottom: 23px;
+}
+.friendship__list-item a {
+  color: #00798a;
+  font-size: 12px;
+  line-height: 23px;
+}
+.friendship__item-title {
+  line-height: 26.83px;
+  margin-bottom: 12px;
+}
+.friendship__item-description {
+  color: #707070;
+  font-size: 12px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 431px) {
+  .friendship__item-description {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .friendship {
+    margin-bottom: 50px;
+  }
+  .friendship__title {
+    font-size: 28px;
+  }
+  .friendship__item-description {
+    padding-right: 0;
+  }
+  .friendship__description {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .friendship__list-item {
+    margin: 0;
+  }
+  .friendship__list-item a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .friendship__item-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .friendship__item-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .friendship__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+  .friendship__list-item {
+    border: none;
+    padding: 0;
+    max-width: 376px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .friendship__list {
+    gap: 32px;
   }
 }
 

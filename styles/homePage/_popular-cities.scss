@@ -45,6 +45,7 @@
     }
   }
   @include for-medium-up {
+    margin-bottom: 64px;
     &__title {
       font-size: 28px;
       margin-bottom: 10px;
