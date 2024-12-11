@@ -1,3 +1,4 @@
+@use '../variables' as *;
 @use '../breakpoints' as *;
 .events {
   margin: 20px 0 0;
@@ -19,14 +20,14 @@
     }
     &__input {
       width: 164px;
-      color: #00798a;
+      color: $teal-green;
       font-size: 13.71px;
       font-weight: 600;
       line-height: 16.45px;
       padding: 8px 28px 8px 8px;
       border: none;
       border-radius: 6px;
-      background: #97cad11f;
+      background: $light-green-background-12;
     }
   }
   &__near-list,
@@ -40,7 +41,7 @@
     display: flex;
     gap: 7.5px;
     padding-top: 10px;
-    border-top: 0.61px solid #d9d9d9;
+    border-top: 0.61px solid $border-gray;
     margin-bottom: 21px;
     display: none;
 
@@ -55,7 +56,7 @@
     display: none;
   }
   &__date--mobile {
-    color: #7c6f50;
+    color: $dark-yelow;
     font-size: 8.58px;
     font-weight: 500;
     line-height: 12.26px;
@@ -70,10 +71,8 @@
     line-height: 14.46px;
   }
   &__location {
-    color: #707070;
-    font-family: Roboto;
+    color: $grey-black;
     font-size: 8.44px;
-    font-weight: 400;
     line-height: 12.05px;
     margin-bottom: 30px;
   }
@@ -99,7 +98,7 @@
     font-size: 7.3px;
     font-weight: 500;
     line-height: 9.73px;
-    color: #707070;
+    color: $grey-black;
 
     &::after {
       position: absolute;
@@ -109,7 +108,7 @@
     }
   }
   &__link--mobile {
-    color: #00798a;
+    color: $teal-green;
     font-size: 12px;
     font-weight: 500;
     line-height: 9.73px;
@@ -121,7 +120,7 @@
   &__status--mobile {
     font-size: 8.44px;
     line-height: 12.05px;
-    color: #707070;
+    color: $border-gray;
   }
 
   @include for-small-up {
@@ -141,7 +140,7 @@
     &__online {
       font-size: 12px;
       padding: 3px 8px 3px 24px;
-      background: white;
+      background: $white;
       border-radius: 4px;
       top: 5px;
       left: 10px;
@@ -201,7 +200,7 @@
     }
     &__link--desktop {
       display: block;
-      color: #00798a;
+      color: $teal-green;
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
@@ -224,7 +223,7 @@
     &__date--desktop {
       font-size: 14px;
       line-height: 20px;
-      color: #212121;
+      color: $standart-black;
     }
     &__status--desktop {
       & div:first-child {

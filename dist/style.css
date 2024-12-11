@@ -6,6 +6,7 @@
 
 body {
   font-family: Roboto;
+  color: #212121;
 }
 
 ul,
@@ -80,7 +81,7 @@ main {
 .header .login__btn:last-child {
   border-radius: 7px;
   background: #00798a;
-  color: white;
+  color: #fff;
 }
 
 .search-form {
@@ -108,8 +109,7 @@ main {
   padding: 13px 37px;
   border-radius: 7px 0 0 7px;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 18.75px;
+  color: #707070;
 }
 .search-form--mobile {
   margin: 15px 0 0;
@@ -167,6 +167,7 @@ main {
     margin-right: 40px;
   }
   .search-form__input:nth-child(2) {
+    color: #000;
     margin-left: -1px;
     padding: 13px 17px;
   }
@@ -189,7 +190,7 @@ footer {
   background: #00798a;
   border-radius: 8px;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 16px;
   line-height: 24px;
 }
@@ -199,6 +200,7 @@ footer {
   margin: 30px 0 20px;
 }
 .about__text {
+  color: #000;
   font-size: 12px;
   line-height: 24px;
 }
@@ -234,9 +236,8 @@ footer {
     line-height: 46px;
   }
   .about__text {
+    color: #212121;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
   }
   .about__join-btn {
     display: block;
@@ -252,12 +253,7 @@ footer {
   }
   .about__title {
     font-size: 42px;
-    font-weight: 700;
     line-height: 52px;
-  }
-  .about__text {
-    font-size: 16px;
-    font-weight: 400;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -338,9 +334,7 @@ footer {
 }
 .events__location {
   color: #707070;
-  font-family: Roboto;
   font-size: 8.44px;
-  font-weight: 400;
   line-height: 12.05px;
   margin-bottom: 30px;
 }
@@ -386,7 +380,7 @@ footer {
 .events__status--mobile {
   font-size: 8.44px;
   line-height: 12.05px;
-  color: #707070;
+  color: #d9d9d9;
 }
 @media screen and (min-width: 431px) {
   .events__img {
@@ -403,7 +397,7 @@ footer {
   .events__online {
     font-size: 12px;
     padding: 3px 8px 3px 24px;
-    background: white;
+    background: #fff;
     border-radius: 4px;
     top: 5px;
     left: 10px;
@@ -564,7 +558,7 @@ footer {
   border-radius: 8px;
 }
 .invite__btn {
-  color: white;
+  color: #fff;
   font-size: 16px;
   line-height: 24px;
   background: #e32359;
@@ -574,13 +568,12 @@ footer {
 }
 .invite__title {
   text-align: start;
-  color: #212121;
   font-size: 20px;
   line-height: 36px;
 }
 .invite__description {
+  color: #000;
   text-align: start;
-  color: #212121;
   line-height: 24px;
   font-size: 12px;
   margin-bottom: 22px;
@@ -612,6 +605,7 @@ footer {
     margin-bottom: 16px;
   }
   .invite__description {
+    color: #212121;
     font-size: 16px;
     margin-bottom: 16px;
   }
@@ -635,7 +629,6 @@ footer {
   margin-bottom: 48px;
 }
 .categories__title {
-  color: #212121;
   font-size: 20px;
   font-weight: 600;
   line-height: 36px;
@@ -649,7 +642,6 @@ footer {
   flex-wrap: wrap;
 }
 .categories__list-item {
-  color: #212121;
   text-align: center;
   min-width: 135px;
   height: 112px;
@@ -697,7 +689,6 @@ footer {
   margin-bottom: 10px;
 }
 .popular-cities__title {
-  color: #212121;
   font-size: 20px;
   line-height: 36px;
 }
@@ -722,7 +713,6 @@ footer {
   margin-bottom: 18px;
 }
 .popular-cities__list span {
-  color: #212121;
   font-size: 14.94px;
   font-weight: 600;
   line-height: 20.92px;
@@ -745,6 +735,10 @@ footer {
   }
   .popular-cities__list img {
     width: 205px;
+  }
+  .popular-cities__list span {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 @media screen and (min-width: 1024px) {

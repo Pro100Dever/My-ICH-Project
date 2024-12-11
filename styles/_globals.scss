@@ -1,7 +1,9 @@
 @use './breakpoints' as *;
+@use './variables' as *;
 
 body {
   font-family: Roboto;
+  color: $standart-black;
 }
 ul,
 ol {

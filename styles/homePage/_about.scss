@@ -1,3 +1,4 @@
+@use '../variables' as *;
 @use '../breakpoints' as *;
 
 .about {
@@ -11,10 +12,10 @@
     width: fit-content;
     margin-top: 24px;
     padding: 8px 16px;
-    background: #00798a;
+    background: $teal-green;
     border-radius: 8px;
     border: none;
-    color: white;
+    color: $white;
     font-size: 16px;
     line-height: 24px;
   }
@@ -24,6 +25,7 @@
     margin: 30px 0 20px;
   }
   &__text {
+    color: $black;
     font-size: 12px;
     line-height: 24px;
   }
@@ -62,9 +64,8 @@
       line-height: 46px;
     }
     &__text {
+      color: $standart-black;
       font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
     }
     &__join-btn {
       display: block;
@@ -80,12 +81,7 @@
     }
     &__title {
       font-size: 42px;
-      font-weight: 700;
       line-height: 52px;
-    }
-    &__text {
-      font-size: 16px;
-      font-weight: 400;
     }
   }
 }

@@ -1,3 +1,4 @@
+@use './variables' as *;
 @use './breakpoints' as *;
 
 .header {
@@ -43,8 +44,8 @@
     }
     &:last-child {
       border-radius: 7px;
-      background: #00798a;
-      color: white;
+      background: $teal-green;
+      color: $white;
     }
   }
 }
@@ -57,7 +58,7 @@
     position: relative;
     height: 42px;
     min-width: 42px;
-    background: #f65858;
+    background: $koral;
     border: none;
     border-radius: 0 7px 7px 0;
 
@@ -70,15 +71,13 @@
   }
 
   &__input {
-    border: 1px solid #d9d9d9;
+    border: 1px solid $border-gray;
 
     &:first-child {
       padding: 13px 37px;
       border-radius: 7px 0 0 7px;
-
       font-size: 16px;
-      font-weight: 400;
-      line-height: 18.75px;
+      color: $grey-black;
     }
   }
 
@@ -141,6 +140,7 @@
     margin-right: 40px;
   }
   .search-form__input:nth-child(2) {
+    color: $black;
     margin-left: -1px;
     padding: 13px 17px;
   }
