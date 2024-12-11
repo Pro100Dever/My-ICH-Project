@@ -11,5 +11,315 @@
     <script type="module" defer src="./scripts/eventsPage.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__content--desktop">
+        <div class="header__right-block">
+          <div class="header__logo">
+            <a href="./">
+              <img src="./assets/icon/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <form class="search-form search-form--desktop" h>
+            <input
+              type="text"
+              class="search-form__input"
+              placeholder="Search events"
+            />
+            <input
+              type="text"
+              class="search-form__input"
+              value="Mountain View, CA"
+            />
+            <button type="button" class="search-form__button"></button>
+          </form>
+        </div>
+        <div class="header__left-block">
+          <div id="language">English</div>
+          <div class="header__login">
+            <button class="login__btn">Log in</button>
+            <button class="login__btn">Sign up</button>
+          </div>
+        </div>
+      </div>
+      <div class="search-form search-form--mobile">
+        <input
+          type="text"
+          class="search-form__input"
+          placeholder="Search events"
+        />
+        <button type="button" class="search-form__button"></button>
+      </div>
+    </header>
+    <main>
+      <section class="all-events">
+        <div class="all-events">
+          <div class="all-events__nav">
+            <div class="all-events__text">
+              <h3 class="all-events__title">Events near New York, NY</h3>
+              <a href="./events.html">Events</a>
+            </div>
+            <div class="all-events__fillters">
+              <div>
+                <span>Any type</span>
+                <ul>
+                  <li>
+                    <p></p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <span>Any distance</span>
+                <ul>
+                  <li>
+                    <p></p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <span>Any category</span>
+                <ul>
+                  <li>
+                    <p></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--  <div class="all-events__content">
+            <ul class="events__near-list">
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+              <li class="events__list-item">
+                <div class="events__img">
+                  <div class="events__online">Online Event</div>
+                </div>
+                <div class="events__text">
+                  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <h3 class="events__title">Day Trading Idea and Strategy</h3>
+                  <div class="events__location">Business (5 km)</div>
+                  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
+                  <div class="events__status--mobile">
+                    <div>1 going</div>
+                  </div>
+                </div>
+                <div class="events__status--desktop">
+                  <div>1 going</div>
+                  <div>Free</div>
+                </div>
+              </li>
+            </ul>
+            <a class="events__link--mobile" href="./events.html"
+              >See all events</a
+            >
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__get-started">
+          <h3 class="footer__title">Create your own Meetup group.</h3>
+          <a id="getStarted" href="./events.html">Get Started</a>
+        </div>
+        <div class="footer__links">
+          <ul class="footer-links__your-acc">
+            <p>Your Account</p>
+            <li><a href="./">Sign up</a></li>
+            <li><a href="./">Log in</a></li>
+            <li><a href="./">Help</a></li>
+            <li><a href="./">Become an Affiliate</a></li>
+          </ul>
+          <ul class="footer-links__discover">
+            <p>Discover</p>
+            <li><a href="./">Groups</a></li>
+            <li><a href="./">Calendar</a></li>
+            <li><a href="./">Topics</a></li>
+            <li><a href="./">Cities</a></li>
+            <li><a href="./events.html">Online Events</a></li>
+            <li><a href="./">Local Guides</a></li>
+            <li><a href="./">Make Friends</a></li>
+          </ul>
+          <ul class="footer-links__meetup">
+            <p>Meetup</p>
+            <li><a href="./">About</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="./">Meetup Pro</a></li>
+            <li><a href="./">Careers</a></li>
+            <li><a href="./">Apps</a></li>
+            <li><a href="./">Podcast</a></li>
+          </ul>
+        </div>
+        <div class="footer__social-media">
+          <p>Follow us</p>
+          <div class="social-media_links">
+            <div class="social-media_links-left">
+              <a href="https://www.facebook.com/">
+                <img src="./assets/icon/Link-Facebook.svg" alt="Facebook" />
+              </a>
+              <a href="https://x.com/">
+                <img src="./assets/icon/Link-Twitter.svg" alt="Twitter" />
+              </a>
+              <a href="https://www.youtube.com/">
+                <img src="./assets/icon/Link-YouTube.svg" alt="YouTube" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/icon/Link-Instagram.svg" alt="Instagram" />
+              </a>
+              <a href="https://www.tiktok.com/">
+                <img
+                  id="tiktok"
+                  src="./assets/icon/Link-TikTok.svg"
+                  alt="TikTok"
+                />
+              </a>
+            </div>
+            <div class="social-media_links-right">
+              <a href="https://play.google.com/store/">
+                <img
+                  src="./assets/icon/download_google.svg"
+                  alt="google-play"
+                />
+              </a>
+              <a href="https://www.apple.com/app-store/">
+                <img src="./assets/icon/download_apple.svg" alt="app-store" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__other-links">
+          <p>© 2024 Meetup</p>
+          <a href="./">Terms of Service</a>
+          <a href="./">Privacy Policy</a>
+          <a href="./">Do Not Sell or Share My Personal Data</a>
+          <a href="./">Cookie Policy</a>
+          <a href="./">Help</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

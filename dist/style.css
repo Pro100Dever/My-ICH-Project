@@ -172,8 +172,135 @@ a {
     padding: 13px 17px;
   }
 }
-footer {
+.footer {
+  background: #212121;
+  padding: 20px 15px 36px;
+}
+.footer #getStarted {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 10px 14px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+.footer a {
+  color: #c5c4c4;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer p {
+  color: #f6f7f8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer__title {
+  color: #f6f7f8;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 16px 35px 0;
+  border-bottom: 1px solid #707070;
+}
+.footer__other-links p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__other-links a {
   display: none;
+}
+.footer__get-started {
+  display: flex;
+  margin-bottom: 34px;
+}
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 21px;
+}
+.footer__links li {
+  margin-bottom: 7px;
+}
+.footer__links p {
+  margin-bottom: 7px;
+}
+.footer__social-media p {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 431px) {
+  .footer__links {
+    column-gap: 10;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 24px 0 40px;
+  }
+  .footer__container {
+    margin: auto;
+    max-width: 580px;
+  }
+  .footer__get-started {
+    border-bottom: 1px solid #707070;
+  }
+  .footer__title {
+    border: none;
+    padding-right: 36px;
+  }
+  .footer__other-links {
+    display: flex;
+    gap: 18px;
+  }
+  .footer__other-links a {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    max-width: 890px;
+  }
+  .footer__other-links {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .footer__container {
+    max-width: 1196px;
+  }
+}
+
+.social-media_links {
+  margin-bottom: 46px;
+}
+.social-media_links #tiktok {
+  transform: scale(1.4);
+}
+.social-media_links-left img {
+  width: 25px;
+  height: 25px;
+  margin-right: 35px;
+}
+.social-media_links-right {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .social-media_links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-media_links-left img {
+    margin-right: 28px;
+  }
+  .social-media_links-right {
+    display: block;
+    display: flex;
+    gap: 25px;
+  }
 }
 
 .about {
