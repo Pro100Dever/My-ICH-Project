@@ -1520,4 +1520,14 @@ input {
   }
 }
 
+.all-events__reset-filter {
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+}
+.all-events__reset-filter:hover {
+  background-color: #d9d9d9;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
