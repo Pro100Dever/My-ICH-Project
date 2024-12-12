@@ -1109,6 +1109,7 @@ a {
 
 .all-events {
   margin: 77px 0 100px;
+  position: relative;
 }
 .all-events__title {
   color: #000;
@@ -1318,6 +1319,9 @@ a {
     flex-direction: row;
     align-items: center;
   }
+  .all-events__list {
+    width: 650px;
+  }
   .all-events__img {
     width: fit-content;
   }
@@ -1335,6 +1339,53 @@ a {
     font-weight: 500;
     line-height: 20px;
   }
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.map p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.map h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.map iframe {
+  position: relative;
+  border-radius: 0 8px 0 8px;
+}
+.map img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.map button {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #00798a;
+  background-color: transparent;
+  border: 2px solid #00798a;
+  border-radius: 8px;
+  padding: 10px 50px 10px 24px;
+}
+.map button::after {
+  position: absolute;
+  content: url(/assets/icon/arrows.svg);
+  right: 20px;
+  bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
