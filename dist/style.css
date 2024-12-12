@@ -200,6 +200,10 @@ input {
   border: 2px solid #fff;
   border-radius: 6px;
 }
+.footer #getStarted:hover {
+  color: #212121;
+  background: #fff;
+}
 .footer a {
   color: #c5c4c4;
   font-size: 14px;
