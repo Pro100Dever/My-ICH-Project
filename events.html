@@ -60,58 +60,63 @@
             </div>
             <!-- Filter -->
             <ul class="all-events__filter">
-              <li class="all-events__filter-type" onclick="toggleElement(this)">
+              <li
+                id="type"
+                class="all-events__filter-list all-events__filter-type"
+              >
                 <span>Any type</span>
                 <ul>
-                  <li>Any type</li>
-                  <li>Online</li>
-                  <li>Offline</li>
+                  <li value="Any type">Any type</li>
+                  <li value="Online">Online</li>
+                  <li value="Offline">Offline</li>
                 </ul>
               </li>
               <li
-                class="all-events__filter-distance"
-                onclick="toggleElement(this)"
+                id="distance"
+                class="all-events__filter-list all-events__filter-distance"
               >
                 <span>Any distance</span>
                 <ul>
-                  <li>Any distance</li>
-                  <li>5 km</li>
-                  <li>10 km</li>
-                  <li>15 km</li>
-                  <li>25 km</li>
-                  <li>50 km</li>
-                  <li>75 km</li>
-                  <li class="nav-menu__item-plus">100 km</li>
+                  <li value="Any distance">Any distance</li>
+                  <li value="5 km">5 km</li>
+                  <li value="10 km">10 km</li>
+                  <li value="15 km">15 km</li>
+                  <li value="25 km">25 km</li>
+                  <li value="50 km">50 km</li>
+                  <li value="75 km">75 km</li>
+                  <li class="nav-menu__item-plus" value="100 km">100 km</li>
                 </ul>
               </li>
               <li
-                class="all-events__filter-category"
-                onclick="toggleElement(this)"
+                id="category"
+                class="all-events__filter-list all-events__filter-category"
               >
                 <span>Any category</span>
                 <ul>
-                  <li>Any category</li>
-                  <li>Social Activities</li>
-                  <li>Hobbies and Passions</li>
-                  <li>Health and Wellbeing</li>
-                  <li>Health and Wellbeing</li>
-                  <li>Business</li>
-                  <li>Technology</li>
+                  <li value="Any category">Any category</li>
+                  <li value="Social Activities">Social Activities</li>
+                  <li value="Hobbies and Passions">Hobbies and Passions</li>
+                  <li value="Health and Wellbeing">Health and Wellbeing</li>
+                  <li value="Business">Business</li>
+                  <li value="Technology">Technology</li>
                 </ul>
               </li>
-              <li class="all-events__filter-date" onclick="toggleElement(this)">
+              <li
+                id="date"
+                class="all-events__filter-list all-events__filter-date"
+              >
                 <span>Any data</span>
                 <ul>
-                  <li>Any data</li>
-                  <li>Mar 13, 11:00 AM</li>
-                  <li>Mar 14, 11:00 AM</li>
-                  <li>Mar 14, 8:00 PM</li>
-                  <li>Mar 16, 2:00 PM</li>
-                  <li>Mar 23, 11:30 AM</li>
-                  <li>Mar 30, 2:00 PM</li>
+                  <li value="Any data">Any data</li>
+                  <li value="Mar 13, 11:00 AM">Mar 13, 11:00 AM</li>
+                  <li value="Mar 14, 11:00 AM">Mar 14, 11:00 AM</li>
+                  <li value="Mar 14, 8:00 PM">Mar 14, 8:00 PM</li>
+                  <li value="Mar 16, 2:00 PM">Mar 16, 2:00 PM</li>
+                  <li value="Mar 23, 11:30 AM">Mar 23, 11:30 AM</li>
+                  <li value="Mar 30, 2:00 PM">Mar 30, 2:00 PM</li>
                 </ul>
               </li>
-              <li class="all-events__reset-filter">
+              <li class="all-events__filter-list all-events__reset-filter">
                 <img
                   src="./assets/icon/reset_settings.svg"
                   alt="reset_filter"

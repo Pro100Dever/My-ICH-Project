@@ -1257,6 +1257,7 @@ input {
   position: relative;
 }
 .all-events__filter-type:hover, .all-events__filter-distance:hover, .all-events__filter-category:hover, .all-events__filter-date:hover {
+  cursor: pointer;
   transition: 0.3s;
 }
 .all-events__filter-type:hover span, .all-events__filter-distance:hover span, .all-events__filter-category:hover span, .all-events__filter-date:hover span {
@@ -1269,7 +1270,6 @@ input {
 }
 .all-events__filter-type ul li:hover, .all-events__filter-distance ul li:hover, .all-events__filter-category ul li:hover, .all-events__filter-date ul li:hover {
   color: #000;
-  font-style: italic;
   font-weight: 500;
 }
 .all-events__filter-type ul:hover li:before, .all-events__filter-distance ul:hover li:before, .all-events__filter-category ul:hover li:before, .all-events__filter-date ul:hover li:before {
