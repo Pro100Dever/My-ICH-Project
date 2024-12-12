@@ -13,4 +13,4 @@ export const detchEven = async () => {
     console.log(error)
   }
 }
-console.log(detchEven())
+// console.log(detchEven())
