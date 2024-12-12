@@ -41,6 +41,12 @@ function createEvents(events, type) {
         } 
           ${event.distance ? `(${event.distance} km)` : ''}
         </div>
+        ${
+          event.type === 'online'
+            ? '<div class="events__online events__online--mobile"> Online Event</div>'
+            : ''
+        }
+        
         <p class="events__date--desktop">${date ? date : 'Error date'}</p>
         <div class="events__status--mobile">
             <div>${event.attendees ? `${event.attendees} going` : ''}</div>
@@ -89,4 +95,5 @@ function renderDate(date) {
   <div>Free</div>
 </div>
 </li>
+
  */
