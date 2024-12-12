@@ -76,24 +76,3 @@ function renderDate(date) {
   return eventDate.toLocaleString('en-US', options)
 }
 //  2024-03-14T16:00:00.000Z
-/* 
-<li class="events__list-item">
-<div class="events__img">
-  <div class="events__online">Online Event</div>
-</div>
-<div class="events__text">
-  <p class="events__date--mobile">Mon, Mar 18 · 7:00 PM PDT</p>
-  <h3 class="events__title">Day Trading Idea and Strategy</h3>
-  <div class="events__location">Business (5 km)</div>
-  <p class="events__date--desktop">Mon, Mar 18 · 7:00 PM PDT</p>
-  <div class="events__status--mobile">
-    <div>1 going</div>
-  </div>
-</div>
-<div class="events__status--desktop">
-  <div>1 going</div>
-  <div>Free</div>
-</div>
-</li>
-
- */

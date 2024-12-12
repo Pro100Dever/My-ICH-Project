@@ -65,5 +65,4 @@ const eventsStore = [
     distance: 15,
   },
 ]
-console.log(eventsStore)
 export { eventsStore }

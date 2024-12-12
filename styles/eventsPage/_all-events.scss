@@ -135,9 +135,8 @@
     position: relative;
     min-width: 98px;
     height: 55px;
-    background: url(../assets/image/event1.webp); // Для JS. данные будут браться из мок апи. Потом переделаю
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include for-medium-up {
       width: 272px;
@@ -170,7 +169,7 @@
   }
 
   &__online {
-    display: none; // Для JS. переделать потом
+    display: none;
     position: relative;
     right: -10px;
     font-size: 7.3px;
@@ -186,9 +185,6 @@
         content: url(../assets/icon/camera.svg);
         left: -10px;
         bottom: -1px;
-      }
-      &--online {
-        display: block;
       }
     }
   }
@@ -232,9 +228,6 @@
         left: 5px;
         top: 2px;
       }
-      &--online {
-        display: block;
-      }
     }
   }
   @include for-medium-up {
@@ -263,14 +256,17 @@
     }
     &__list-item {
       margin-bottom: 15px;
+      gap: 12px;
 
       &:nth-child(3) {
         .all-events__status div {
           position: relative;
           &::after {
+            display: none; // как бы есть но не очень нужное
             position: absolute;
             content: '· 2 spots left';
-            right: -200%;
+            right: -200px;
+            bottom: 0;
             color: $cherry;
           }
         }

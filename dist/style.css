@@ -1341,9 +1341,8 @@ input {
   position: relative;
   min-width: 98px;
   height: 55px;
-  background: url(../assets/image/event1.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .all-events__img {
@@ -1392,9 +1391,6 @@ input {
   left: -10px;
   bottom: -1px;
 }
-.all-events__online--mobile--online {
-  display: block;
-}
 @media screen and (min-width: 431px) {
   .all-events__img {
     min-width: 196px;
@@ -1433,9 +1429,6 @@ input {
     left: 5px;
     top: 2px;
   }
-  .all-events__online--online {
-    display: block;
-  }
 }
 @media screen and (min-width: 768px) {
   .all-events__img {
@@ -1463,14 +1456,17 @@ input {
   }
   .all-events__list-item {
     margin-bottom: 15px;
+    gap: 12px;
   }
   .all-events__list-item:nth-child(3) .all-events__status div {
     position: relative;
   }
   .all-events__list-item:nth-child(3) .all-events__status div::after {
+    display: none;
     position: absolute;
     content: "· 2 spots left";
-    right: -200%;
+    right: -200px;
+    bottom: 0;
     color: #e32359;
   }
 }
