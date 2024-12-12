@@ -16,6 +16,10 @@
     padding: 10px 14px;
     border: 2px solid $white;
     border-radius: 6px;
+    &:hover {
+      color: $standart-black;
+      background: $white;
+    }
   }
   & a {
     color: $footer-gray;
