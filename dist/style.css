@@ -72,10 +72,12 @@ input {
   font-weight: 400;
   line-height: 17.09px;
   border: none;
+  transition: all 400ms ease;
 }
-.header .login__btn:last-child:hover {
-  font-style: italic;
-  background: #01606d;
+.header .login__btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 1024px) {
   .header .login__btn {
@@ -342,11 +344,12 @@ input {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
+  transition: all 400ms ease;
 }
 .about__join-btn:hover {
-  font-style: italic;
-  font-weight: 500;
-  background: #01606d;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .about__title {
   font-size: 25px;
@@ -766,9 +769,9 @@ input {
   padding: 8px 67px;
 }
 .invite__btn:hover {
-  font-style: italic;
-  font-weight: 500;
-  background-color: #bb1c49;
+  background-color: #fff;
+  color: #e32359;
+  border: 2px solid #e32359;
 }
 .invite__title {
   text-align: start;

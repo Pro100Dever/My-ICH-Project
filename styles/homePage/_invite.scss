@@ -21,9 +21,9 @@
     border-radius: 8px;
     padding: 8px 67px;
     &:hover {
-      font-style: italic;
-      font-weight: 500;
-      background-color: #bb1c49;
+      background-color: $white;
+      color: $cherry;
+      border: 2px solid $cherry;
     }
   }
 
