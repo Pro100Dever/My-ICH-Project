@@ -1,7 +1,7 @@
 const baseUrl =
   'https://my-json-server.typicode.com/Pro100Dever/projectDatas/db'
 
-export const detchEven = async () => {
+const fetchEven = async () => {
   try {
     const response = await fetch(baseUrl)
     if (!response.ok) {
@@ -13,4 +13,5 @@ export const detchEven = async () => {
     console.log(error)
   }
 }
-// console.log(detchEven())
+
+export { fetchEven as fetchDatas }

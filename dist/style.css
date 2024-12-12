@@ -500,7 +500,6 @@ input {
   position: relative;
   min-width: 98px;
   height: 55px;
-  background: url("https://raw.githubusercontent.com/Pro100Dever/My-ICH-Project/refs/heads/main/assets/image/event11.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -528,9 +527,6 @@ input {
   content: url(../assets/icon/camera.svg);
   left: -10px;
   bottom: -1px;
-}
-.events__online--mobile--online {
-  display: block;
 }
 .events__link--mobile {
   color: #00798a;
@@ -599,9 +595,6 @@ input {
     content: url(../assets/icon/cameraForDesctop.svg);
     left: 5px;
     top: 2px;
-  }
-  .events__online--online {
-    display: block;
   }
 }
 @media screen and (min-width: 768px) {

@@ -84,7 +84,6 @@
     position: relative;
     min-width: 98px;
     height: 55px;
-    background: url('https://raw.githubusercontent.com/Pro100Dever/My-ICH-Project/refs/heads/main/assets/image/event11.webp'); // Для JS. данные будут браться из мок апи. Потом переделаю
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -95,7 +94,7 @@
   }
 
   &__online {
-    display: none; // Для JS. переделать потом
+    display: none;
     position: relative;
     right: -10px;
     font-size: 7.3px;
@@ -112,9 +111,6 @@
         content: url(../assets/icon/camera.svg);
         left: -10px;
         bottom: -1px;
-      }
-      &--online {
-        display: block;
       }
     }
   }
@@ -189,9 +185,6 @@
         content: url(../assets/icon/cameraForDesctop.svg);
         left: 5px;
         top: 2px;
-      }
-      &--online {
-        display: block;
       }
     }
   }
