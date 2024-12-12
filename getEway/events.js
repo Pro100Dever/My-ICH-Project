@@ -1,4 +1,4 @@
-export const eventsStore = [
+const eventsStore = [
   {
     title: 'INFJ Personality Type - Coffee Shop Meet & Greet',
     description: 'Being an INFJ',
@@ -65,3 +65,5 @@ export const eventsStore = [
     distance: 15,
   },
 ]
+console.log(eventsStore)
+export { eventsStore }
