@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
     text-align: center;
     &-type,
     &-distance,
@@ -41,7 +41,42 @@
       flex-direction: column;
       gap: 10px;
       position: relative;
+      ////////////////////////////////////
+      &:hover {
+        transition: 0.3s;
+        & span {
+          text-decoration: underline;
+          font-style: italic;
+          font-weight: 500;
+        }
+      }
+      ul li {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      ul li:hover {
+        color: $black;
+        font-style: italic;
+        font-weight: 500;
+      }
 
+      ul:hover li:before {
+        scale: 1;
+      }
+      ul li:hover:before {
+        translate: 0;
+        transition: 0.3s;
+      }
+      ul:hover li:has(~ li:hover):before {
+        translate: 100% 0;
+        transition: 0.2s 0.2s, scale 0s 0.4s;
+      }
+      ul:hover li:hover ~ li:before {
+        translate: -100% 0;
+        transition: 0.2s 0.2s, scale 0s 0.4s;
+      }
+      /////////////////////////////////////
       & ul {
         text-align: start;
         display: none; // тута список
@@ -86,15 +121,21 @@
     margin-bottom: 67px;
   }
   &__list-item {
+    border-radius: 0 0 8px 8px;
     display: flex;
     gap: 7.5px;
     padding-top: 10px;
     border-top: 0.61px solid $border-gray;
     margin-bottom: 45px;
+    position: relative;
+    &:hover {
+      transform: 0.5s;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    }
   }
   &__img {
     position: relative;
-    width: 98px;
+    min-width: 98px;
     height: 55px;
     background: url(../assets/image/event1.webp); // Для JS. данные будут браться из мок апи. Потом переделаю
     background-repeat: no-repeat;
@@ -104,6 +145,10 @@
       width: 272px;
       height: 153px;
     }
+  }
+  &__status {
+    display: none;
+    color: $grey-black;
   }
   &__text {
     padding: 2px 0 0;
@@ -128,33 +173,35 @@
 
   &__online {
     display: none; // Для JS. переделать потом
-    position: absolute;
-    bottom: 0;
-    right: -60px;
+    position: relative;
+    right: -10px;
     font-size: 7.3px;
     font-weight: 500;
     line-height: 9.73px;
     color: $grey-black;
-    &--online {
-      display: block;
-    }
-    &::after {
-      position: absolute;
-      content: url(../assets/icon/camera.svg);
-      left: -10px;
-      bottom: -1px;
-    }
-  }
 
-  &__status {
-    display: none;
-    color: $grey-black;
+    &--mobile {
+      display: block;
+
+      &::after {
+        position: absolute;
+        content: url(../assets/icon/camera.svg);
+        left: -10px;
+        bottom: -1px;
+      }
+      &--online {
+        display: block;
+      }
+    }
   }
 
   @include for-small-up {
     &__img {
       min-width: 196px;
       height: 110px;
+    }
+    &__list-title {
+      line-height: 20px;
     }
     &__status,
     &__location,
@@ -164,16 +211,12 @@
     &__text {
       position: relative;
     }
-    &__status {
-      display: block;
-      position: absolute;
-      bottom: 0;
-    }
     &__list-title {
       font-size: 16px;
       margin: 5px 0;
     }
     &__online {
+      display: block;
       font-size: 12px;
       padding: 3px 8px 3px 24px;
       background: $white;
@@ -182,17 +225,28 @@
       left: 10px;
       width: fit-content;
       height: fit-content;
-
+      &--mobile {
+        display: none;
+      }
       &::after {
+        position: absolute;
         content: url(../assets/icon/cameraForDesctop.svg);
         left: 5px;
         top: 2px;
+      }
+      &--online {
+        display: block;
       }
     }
   }
   @include for-medium-up {
     &__img {
       width: fit-content;
+    }
+    &__status {
+      display: block;
+      position: absolute;
+      bottom: 0;
     }
     &__date {
       font-size: 14px;
@@ -211,6 +265,7 @@
     }
     &__list-item {
       margin-bottom: 15px;
+
       &:nth-child(3) {
         .all-events__status div {
           position: relative;
@@ -225,6 +280,14 @@
     }
   }
   @include for-large-up {
+    &__nav {
+      position: sticky;
+      top: 0;
+      z-index: 97;
+      background: $white;
+      border-radius: 18px;
+      box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+    }
     &__filter {
       text-align: start;
       flex-direction: row;
@@ -254,6 +317,7 @@
 }
 
 .map {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -299,5 +363,8 @@
       right: 20px;
       bottom: 5px;
     }
+  }
+  @include for-xl-up {
+    display: block;
   }
 }

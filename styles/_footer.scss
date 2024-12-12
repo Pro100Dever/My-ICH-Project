@@ -55,6 +55,9 @@
     margin-bottom: 21px;
     & li {
       margin-bottom: 7px;
+      & a:hover {
+        color: $white;
+      }
     }
     & p {
       margin-bottom: 7px;
@@ -86,6 +89,9 @@
       gap: 18px;
       & a {
         display: block;
+        &:hover {
+          color: $white;
+        }
       }
     }
   }

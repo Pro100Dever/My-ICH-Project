@@ -32,6 +32,10 @@
     font-weight: 400;
     line-height: 17.09px;
     border: none;
+    &:last-child:hover {
+      font-style: italic;
+      background: #01606d;
+    }
 
     @include for-large-up {
       font-size: 14px;
@@ -117,6 +121,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 17.09px;
+  &:hover {
+    cursor: pointer;
+  }
 
   &::after {
     position: absolute;

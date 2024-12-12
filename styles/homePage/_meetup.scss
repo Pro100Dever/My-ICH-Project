@@ -35,6 +35,10 @@
         font-weight: 500;
         line-height: 14.93px;
         color: $teal-green;
+        &:hover {
+          font-style: italic;
+          font-weight: 600;
+        }
       }
     }
     &-img {

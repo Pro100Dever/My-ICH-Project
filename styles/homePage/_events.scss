@@ -43,8 +43,12 @@
     padding-top: 10px;
     border-top: 0.61px solid $border-gray;
     margin-bottom: 21px;
-    display: none;
-
+    border-radius: 0 0 8px 8px;
+    position: relative; // Online
+    &:hover {
+      transform: 0.5s;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    }
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
@@ -74,11 +78,11 @@
     color: $grey-black;
     font-size: 8.44px;
     line-height: 12.05px;
-    margin-bottom: 30px;
+    margin-bottom: 2px;
   }
   &__img {
     position: relative;
-    width: 98px;
+    min-width: 98px;
     height: 55px;
     background: url(../assets/image/event1.webp); // Для JS. данные будут браться из мок апи. Потом переделаю
     background-repeat: no-repeat;
@@ -92,21 +96,26 @@
 
   &__online {
     display: none; // Для JS. переделать потом
-    position: absolute;
-    bottom: 0;
-    right: -60px;
+    position: relative;
+    right: -10px;
     font-size: 7.3px;
     font-weight: 500;
     line-height: 9.73px;
     color: $grey-black;
-    &--online {
+
+    &--mobile {
       display: block;
-    }
-    &::after {
-      position: absolute;
-      content: url(../assets/icon/camera.svg);
-      left: -10px;
-      bottom: -1px;
+      margin-bottom: 18.5px;
+
+      &::after {
+        position: absolute;
+        content: url(../assets/icon/camera.svg);
+        left: -10px;
+        bottom: -1px;
+      }
+      &--online {
+        display: block;
+      }
     }
   }
   &__link--mobile {
@@ -117,6 +126,10 @@
   }
   &__link--desktop {
     display: none;
+    &:hover {
+      font-style: italic;
+      font-weight: 600;
+    }
   }
 
   &__status--mobile {
@@ -135,11 +148,15 @@
     &__date--mobile {
       font-size: 12px;
     }
+    &__location {
+      margin-bottom: 40px;
+    }
     &__title {
       font-size: 16px;
       margin: 5px 0;
     }
     &__online {
+      display: block;
       font-size: 12px;
       padding: 3px 8px 3px 24px;
       background: $white;
@@ -149,10 +166,18 @@
       width: fit-content;
       height: fit-content;
 
+      &--mobile {
+        display: none;
+        margin-bottom: 18.5px;
+      }
       &::after {
+        position: absolute;
         content: url(../assets/icon/cameraForDesctop.svg);
         left: 5px;
         top: 2px;
+      }
+      &--online {
+        display: block;
       }
     }
   }
@@ -255,6 +280,10 @@
       gap: 0;
       border: none;
       display: flex;
+      &:hover {
+        transform: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
     }
     &__text {
       position: relative;

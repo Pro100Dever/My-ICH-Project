@@ -23,6 +23,10 @@
       color: $teal-green;
       font-size: 12px;
       line-height: 23px;
+      &:hover {
+        font-style: italic;
+        font-weight: 500;
+      }
     }
   }
   &__item {

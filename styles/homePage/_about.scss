@@ -18,6 +18,11 @@
     color: $white;
     font-size: 16px;
     line-height: 24px;
+    &:hover {
+      font-style: italic;
+      font-weight: 500;
+      background: #01606d;
+    }
   }
   &__title {
     font-size: 25px;
