@@ -500,7 +500,7 @@ input {
   position: relative;
   min-width: 98px;
   height: 55px;
-  background: url("https://github.com/Pro100Dever/My-ICH-Project/blob/main/assets/image/event11.png");
+  background: url("https://raw.githubusercontent.com/Pro100Dever/My-ICH-Project/refs/heads/main/assets/image/event11.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
