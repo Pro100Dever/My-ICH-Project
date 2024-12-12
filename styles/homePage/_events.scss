@@ -49,10 +49,8 @@
       transform: 0.5s;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     }
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
-      display: flex;
+    &:nth-child(n + 4) {
+      display: none;
     }
   }
   &__date--desktop,
