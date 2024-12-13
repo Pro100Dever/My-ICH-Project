@@ -1579,4 +1579,28 @@ input {
   scale: 1.03;
 }
 
+.all-events__filter-list:first-child {
+  z-index: 6;
+}
+
+.all-events__filter-list:nth-child(2) {
+  z-index: 5;
+}
+
+.all-events__filter-list:nth-child(3) {
+  z-index: 4;
+}
+
+.all-events__filter-list:nth-child(4) {
+  z-index: 3;
+}
+
+.all-events__filter-list ul {
+  z-index: 9999;
+}
+
+.all-events__list-item {
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
