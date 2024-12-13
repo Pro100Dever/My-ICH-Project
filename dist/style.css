@@ -1553,7 +1553,7 @@ input {
 }
 .map button::after {
   position: absolute;
-  content: url(../../assets/icon/arrows.svg);
+  content: url(../assets/icon/arrows.svg);
   right: 20px;
   bottom: 5px;
 }
