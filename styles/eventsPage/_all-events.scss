@@ -41,7 +41,7 @@
       flex-direction: column;
       gap: 10px;
       position: relative;
-      ////////////////////////////////////
+
       &:hover {
         cursor: pointer;
         transition: 0.3s;
@@ -72,11 +72,11 @@
         translate: -100% 0;
         transition: 0.2s 0.2s, scale 0s 0.4s;
       }
-      /////////////////////////////////////
+
       & ul {
         text-align: start;
-        display: none; // тута список
-        // display: flex;
+        display: none;
+
         z-index: 999;
         width: 100%;
         flex-direction: column;
@@ -266,7 +266,7 @@
         .all-events__status div {
           position: relative;
           &::after {
-            display: none; // как бы есть но не очень нужное
+            display: none;
             position: absolute;
             content: '· 2 spots left';
             right: -200px;

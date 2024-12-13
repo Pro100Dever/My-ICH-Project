@@ -75,4 +75,3 @@ function renderDate(date) {
   }
   return eventDate.toLocaleString('en-US', options)
 }
-//  2024-03-14T16:00:00.000Z
