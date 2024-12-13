@@ -45,9 +45,7 @@
       &:hover {
         cursor: pointer;
         transition: 0.3s;
-        & span {
-          font-weight: 500;
-        }
+        scale: 1.03;
       }
       ul li {
         cursor: pointer;
@@ -103,6 +101,12 @@
           content: url(../assets/icon/arrow-list.svg);
           right: -20px;
           top: 0;
+          transition: 0.2s linear;
+          transform: rotate(0deg);
+        }
+        &.aktive::after {
+          transition: 0.3;
+          transform: rotate(180deg);
         }
       }
     }
@@ -370,4 +374,8 @@
     background-color: $border-gray;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
+}
+.all-events__reset-filter:hover {
+  transition: 0.3s;
+  scale: 1.03;
 }

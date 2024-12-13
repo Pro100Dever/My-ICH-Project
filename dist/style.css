@@ -1259,9 +1259,7 @@ input {
 .all-events__filter-type:hover, .all-events__filter-distance:hover, .all-events__filter-category:hover, .all-events__filter-date:hover {
   cursor: pointer;
   transition: 0.3s;
-}
-.all-events__filter-type:hover span, .all-events__filter-distance:hover span, .all-events__filter-category:hover span, .all-events__filter-date:hover span {
-  font-weight: 500;
+  scale: 1.03;
 }
 .all-events__filter-type ul li, .all-events__filter-distance ul li, .all-events__filter-category ul li, .all-events__filter-date ul li {
   cursor: pointer;
@@ -1315,6 +1313,12 @@ input {
   content: url(../assets/icon/arrow-list.svg);
   right: -20px;
   top: 0;
+  transition: 0.2s linear;
+  transform: rotate(0deg);
+}
+.all-events__filter-type span.aktive::after, .all-events__filter-distance span.aktive::after, .all-events__filter-category span.aktive::after, .all-events__filter-date span.aktive::after {
+  transition: 0.3;
+  transform: rotate(180deg);
 }
 .all-events-title {
   font-size: 14px;
@@ -1567,6 +1571,11 @@ input {
 .all-events__reset-filter:hover {
   background-color: #d9d9d9;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.all-events__reset-filter:hover {
+  transition: 0.3s;
+  scale: 1.03;
 }
 
 /*# sourceMappingURL=style.css.map */

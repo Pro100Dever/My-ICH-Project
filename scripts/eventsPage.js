@@ -4,7 +4,42 @@ const allEventList = document.querySelector('.all-events__list')
 const filterContainer = document.querySelector('.all-events__filter')
 const filtersArr = filterContainer.querySelectorAll('.all-events__filter-list')
 const filterResetBtn = document.querySelector('.all-events__reset-filter')
+
 renderAllEventsList()
+
+const lockalDatas = localStorage.getItem('filters')
+  ? JSON.parse(localStorage.getItem('filters'))
+  : ''
+
+if (lockalDatas) {
+  filtersArr.forEach(li => {
+    const listTitle = li.querySelector('span')
+
+    // if (li.closest('.all-events__reset-filter')) {
+    //   console.log('reset')
+    //   return
+    // }
+    // Вставляем текст из локала
+    if (li.classList.contains('all-events__filter-distance')) {
+      listTitle.innerText = lockalDatas.distance + ' km'
+    } else if (li.classList.contains('all-events__filter-category')) {
+      listTitle.innerText = lockalDatas.category
+    } else if (li.classList.contains('all-events__filter-type')) {
+      listTitle.innerText = lockalDatas.type
+    } else if (li.classList.contains('all-events__filter-date')) {
+      listTitle.innerText = lockalDatas.data
+    }
+    // красим кнопки
+    // if (!listTitle.innerText.split(' ').includes('Any')) {
+    //   listTitle.style.color = '#fff'
+    //   li.style.background = '#00798A'
+    // } else {
+    //   listTitle.style.color = '#212121'
+    //   li.style.background = '#f6f7f8'
+    // }
+  })
+}
+
 const filterObj = {
   type: 'Any type',
   distance: 'Any distance',
@@ -77,8 +112,6 @@ function getFilterDatas(datas) {
 
   if (filters) {
     // Фильтруем данные на основе фильтров
-    console.log(datas[0].date)
-    console.log(filters.data)
     const newDatas = datas
       .filter(
         element =>
@@ -95,8 +128,11 @@ function getFilterDatas(datas) {
           filters.category.toLowerCase() == 'any category' ||
           filters.category.toLowerCase() == element.category.toLowerCase()
       )
-
-    console.log(newDatas)
+      .filter(
+        element =>
+          filters.data.toLowerCase() == 'any data' ||
+          filters.data == element.date
+      )
     return newDatas
   } else {
     // Если фильтры отсутствуют, возвращаем все данные
@@ -149,10 +185,11 @@ function renderAllEventsList() {
 filtersArr.forEach(filter => {
   filter.addEventListener('click', e => {
     const filterList = e.currentTarget.closest('.all-events__filter-list')
-    filterList.classList.toggle('aktive')
     if (e.target.closest('.all-events__reset-filter')) {
       return
     }
+    filterList.classList.toggle('aktive')
+    filter.querySelector('span').classList.toggle('aktive')
     filterList.classList.contains('aktive')
       ? (filter.querySelector('ul').style.display = 'block')
       : (filter.querySelector('ul').style.display = 'none')
@@ -174,24 +211,7 @@ function renderDate(date) {
 }
 // Карта
 closeMapBtn.addEventListener('click', () => {
-  console.log('fdh')
   const closeMap = document.getElementById('blurMap')
   closeMap.style.display = 'none'
   closeMapBtn.style.display = 'none'
 })
-
-/* 
-  {
-    title: 'INFJ Personality Type - Coffee Shop Meet & Greet',
-    description: 'Being an INFJ',
-    date: new Date(2024, 2, 23, 15),
-    image:
-      'https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%201037w ',
-    type: 'offline',
-    attendees: 99,
-    category: 'Hobbies and Passions',
-    distance: 50,
-  },
-*/
-
-console.log(new Date())
